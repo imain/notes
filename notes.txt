@@ -1,0 +1,6 @@
+
+- Did standard OVB deploy on RDO cloud
+  - ./devmode.sh -w /var/tmp/ovb --no-gate --ovb --delete-all-stacks
+- Use this overcloud-prepare.sh to get container images loaded.
+- Start overcloud with overcloud-deploy.sh
+
