@@ -8,6 +8,9 @@ openstack overcloud container image prepare \
     --exclude ceph \
     --push-destination 192.168.24.1:8787
 
+echo "  DockerInsecureRegistryAddress: 192.168.24.1:8787" >> \
+    /home/stack/containers-default-parameters.yaml
+
 openstack overcloud container image upload --verbose --config-file /home/stack/overcloud_containers.yaml
 
 
